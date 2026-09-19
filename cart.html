@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart — Burrow & Bolt</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="announcement-bar">Free shipping on orders over $35 · Everyday household staples, restocked weekly</div>
+    <div class="header-inner container">
+      <a href="index.html" class="logo"><span class="logo-mark">🏠</span> Burrow & Bolt</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn" href="shop.html" aria-label="Search products">🔍</a>
+        <a class="icon-btn" href="cart.html" aria-label="View cart">
+          🛒<span class="cart-count is-hidden" data-cart-count>0</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="site-nav-mobile" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Cart</div>
+      <h1>Your cart</h1>
+    </div>
+
+    <section class="section" style="padding-top:8px;">
+      <div class="container">
+
+        <div class="cart-layout" id="cart-layout">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--color-border); padding-bottom:12px; margin-bottom:4px;">
+              <strong id="cart-item-count">0 items</strong>
+              <a href="shop.html" class="section-link">Continue shopping →</a>
+            </div>
+            <div id="cart-lines"></div>
+          </div>
+
+          <aside class="summary-card">
+            <h3>Order summary</h3>
+            <div class="summary-row"><span>Subtotal</span><span id="summary-subtotal">$0.00</span></div>
+            <div class="summary-row"><span>Shipping</span><span id="summary-shipping">$0.00</span></div>
+
+            <form class="promo-row" id="promo-form">
+              <label class="visually-hidden" for="promo-code">Promo code</label>
+              <input id="promo-code" type="text" placeholder="Promo code" />
+              <button class="btn btn-outline btn-sm" type="submit">Apply</button>
+            </form>
+            <p id="promo-msg" style="font-size:0.8rem; color:var(--color-text-muted); margin:-8px 0 4px;"></p>
+
+            <div class="summary-row total"><span>Total</span><span id="summary-total">$0.00</span></div>
+            <button class="btn btn-primary btn-block" id="checkout-btn" style="margin-top:18px;" type="button">Checkout</button>
+            <p style="font-size:0.78rem; color:var(--color-text-muted); text-align:center; margin-top:10px;">This is a demo store — no real payment is collected.</p>
+          </aside>
+        </div>
+
+        <div class="cart-empty" id="cart-empty" style="display:none;">
+          <div class="icon">🛒</div>
+          <h2>Your cart is empty</h2>
+          <p style="color:var(--color-text-muted); margin-bottom:22px;">Looks like you haven't added anything yet.</p>
+          <a class="btn btn-primary" href="shop.html">Start shopping</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <span>© 2026 Burrow & Bolt. All rights reserved.</span>
+        <a href="index.html" class="logo"><span class="logo-mark">🏠</span> Burrow & Bolt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/render-cart.js"></script>
+</body>
+</html>

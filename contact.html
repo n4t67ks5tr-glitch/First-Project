@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & FAQ — Burrow & Bolt</title>
+  <meta name="description" content="Get in touch with Burrow & Bolt, or check answers to common shipping, returns, and order questions." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="announcement-bar">Free shipping on orders over $35 · Everyday household staples, restocked weekly</div>
+    <div class="header-inner container">
+      <a href="index.html" class="logo"><span class="logo-mark">🏠</span> Burrow & Bolt</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn" href="shop.html" aria-label="Search products">🔍</a>
+        <a class="icon-btn" href="cart.html" aria-label="View cart">
+          🛒<span class="cart-count is-hidden" data-cart-count>0</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="site-nav-mobile" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <h1>Get in touch</h1>
+    </div>
+
+    <section class="section" style="padding-top:8px;">
+      <div class="container contact-grid">
+        <form class="contact-form" data-contact-form>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>Order question</option>
+              <option>Shipping & returns</option>
+              <option>Product suggestion</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
+
+        <div>
+          <div class="contact-info-item">
+            <div class="icon">✉️</div>
+            <div>
+              <h5>Email</h5>
+              <p>hello@burrowandbolt.example</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">💬</div>
+            <div>
+              <h5>Live chat</h5>
+              <p>Weekdays, 9am–6pm — reply time under 2 hours.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">📦</div>
+            <div>
+              <h5>Returns</h5>
+              <p>30 days, no restocking fee, prepaid label included.</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">📍</div>
+            <div>
+              <h5>Warehouse</h5>
+              <p>Shipped from a single US fulfillment center for fast, simple tracking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container" style="max-width:760px;">
+        <div class="section-head">
+          <div>
+            <h2>Frequently asked questions</h2>
+          </div>
+        </div>
+
+        <details class="faq-item" open>
+          <summary>How fast does shipping take?</summary>
+          <p>Orders ship within 1–2 business days and typically arrive in 3–5 business days via standard ground shipping. Shipping is free on orders over $35.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What's your return policy?</summary>
+          <p>You have 30 days from delivery to return any item for a full refund. Unused, resalable condition preferred, but we handle case-by-case exceptions — just reach out.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you restock sold-out items?</summary>
+          <p>Yes — most items restock weekly. Subscribe to our newsletter for restock alerts on specific products.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I change or cancel an order after placing it?</summary>
+          <p>Orders can be changed or canceled within 1 hour of purchase. After that, they've usually entered packing — contact us and we'll do what we can.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is this a real store I can buy from?</summary>
+          <p>Burrow & Bolt is a demo storefront built to showcase a niche household-goods shopping experience. The cart and checkout flow work, but no real payment is collected.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-mark">🏠</span> Burrow & Bolt</a>
+          <p>Niche household essentials for daily life — hardware, cleaning, kitchen, storage, laundry & safety, all in one place.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Shop</h5>
+          <ul>
+            <li><a href="shop.html?category=cleaning">Cleaning Supplies</a></li>
+            <li><a href="shop.html?category=hardware">Hardware & Tools</a></li>
+            <li><a href="shop.html?category=kitchen">Kitchen Essentials</a></li>
+            <li><a href="shop.html?category=storage">Storage & Organization</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="cart.html">Your cart</a></li>
+            <li><a href="contact.html">Shipping & returns</a></li>
+            <li><a href="contact.html">Track an order</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Burrow & Bolt. All rights reserved.</span>
+        <span>Demo storefront — no real payments are processed.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
