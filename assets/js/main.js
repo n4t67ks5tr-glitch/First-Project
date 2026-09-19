@@ -84,5 +84,4 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initNewsletterForms();
   initContactForm();
-  wireQuickAddButtons();
 });

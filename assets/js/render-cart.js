@@ -87,7 +87,7 @@
 
   checkoutBtn.addEventListener("click", () => {
     if (!cartCount()) return;
-    showToast("This is a demo store — checkout isn't connected to real payment yet.");
+    window.location.href = "checkout.html";
   });
 
   if (promoForm) {
